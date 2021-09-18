@@ -1,0 +1,295 @@
+
+.cart-button-style {
+    border-style: none;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    width: 8em;
+    padding: 0.8em 0.8em;
+    margin: 0em;
+    background: #7762ff;
+    color: white;
+    transition: background .8s;
+    border-radius: 4px; 
+    outline: none;
+}
+
+.cart-button-style-two {
+    border-style: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10em;
+    padding: 1em 1em;
+    margin: 0.5em;
+    background: white;
+    color: #7762ff;
+    transition: background .8s;
+    border-radius: 4px; 
+    outline: none;
+}
+
+.cart-button-style:hover, #checkout:hover, #apply-promo:hover, .keep-shopping:hover {
+    background: #62ff8e;
+    color: white;
+    outline: none;
+}
+
+.cart-button-style:active, #checkout:active, #apply-promo:active, .keep-shopping:active {
+    background: #ff6884;
+    color: white;
+    outline: none;
+}
+
+.products {
+    float: left;
+    width: 23%;
+    margin: 3% 1%;
+    text-align: center;
+    padding: 0 0 1% 0;
+}
+
+.products img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#huawei-p20 img{
+    width:300px;
+    height: 260px;
+   }
+
+@media screen and (max-width: 980px) {
+    .products {
+        width: 45%;
+        text-align: center;
+        margin: 1.66%;
+    }
+   #huawei-p20 img{
+    width:300px;
+    height: 312px;
+   }
+}
+
+@media screen and (max-width: 790px) {
+    .products {
+        width: 47%;
+        margin: 1% 1%;
+    }
+    
+    #shop {
+        margin: 5% 1%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .products {
+        width: 100%;
+    }
+    
+    #shop {
+        margin: 2% 0;
+    }
+}
+
+#shop::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.add-to-cart {
+    display: block;
+    margin: 1% auto;
+    border-style: none;
+    width: 10em;
+    height: 3em;
+    background: #62ff8e;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: all 0.5s;
+    outline: none;
+}
+
+.add-to-cart:hover {
+    background: #7762ff;
+    outline: none;
+}
+
+.add-to-cart:active {
+    background: #62ff8e;
+
+}
+
+.slider {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0px;
+    overflow: hidden;
+    background: white;
+    transition: all 1s;
+}
+
+.slider.close {
+    top: 100vh;
+    height: 0;
+}
+
+#amount-controls {
+    background: white;
+    top: 90px;
+    right: 0;
+}
+
+#cart-amount-wrapper {
+    background: white;
+    padding: 1.5% 0 .5% 35%;
+    border-radius: 10px;
+}
+
+#cart {
+    text-align: left;
+    margin: 3.5em 0.5em;
+    padding: 0.5% 1.5%;
+    overflow-y: scroll;
+}
+
+#total::before, #subtotal::before, .product-price::before, .cart-product-price::before, .cart-updated-product-price::before, #discountAmt::before {
+    content: '₹';
+}
+
+#cart #quantity-value {
+    width: 45%;
+}
+
+.name-col {
+  width: 40%;
+}
+.quantity-col {
+  width: 5%;
+}
+.price-col {
+  width: 15%;
+}
+
+.updated-price-col {
+    width: 25%;
+}
+
+.update-col {
+    width: 10%
+}
+
+.remove-col {
+  width: 5%;
+}
+
+#update {
+    border-style: none;
+    text-transform: uppercase;
+    padding: 2% 12px;
+    width: 100%;
+    height: 30px;
+    background: #56ff6a;
+    color: white;
+    border-radius: 10px;
+    transition: all 0.5s;
+    outline: none;
+}
+
+#update:hover {
+    background: #f0ffe6;
+    color: #56ff6a;
+    outline: none;
+}
+
+#update:active {
+    background: #56f46a;
+    color: white;
+    outline: none;
+}
+
+.remove {
+    border-style: none;
+    font-weight: bolder;
+    padding: 2% 2.5%;
+    width: 100%;
+    height: 30px;
+    background: #ff7b67;
+    color: #fff1e7;
+    border-radius: 10px;
+    transition: all 0.5s;
+    outline: none;
+}
+
+.remove:hover {
+    background: #fff1e7;
+    color: #ff7b67;
+    outline: none;
+}
+
+.remove:active {
+    background: #ff7b67;
+    color: #f5f1e7;
+}
+
+#cart-products-wrapper {
+    overflow-y: auto;
+}
+
+#cart-amount-wrapper {
+    overflow-x: auto;
+}
+
+#promo {
+    width: 8em;
+    padding: 5px 6px;
+    transition: background .5s;
+    border-radius: 4px;
+}
+
+#apply-promo, #checkout, .keep-shopping {
+    border-style: none;
+    width: 10em;
+    padding: 1em 1em;
+    background: #7762ff;
+    color: white;
+    transition: background .5s;
+    border-radius: 4px;
+}
+
+
+
+@media screen and (max-width: 700px) {
+   #cart-table-header th{
+       font-size: 0.6rem;
+   }
+   .name-col {
+    width: 50%;
+}
+#amount-controls{
+    width: 100%;
+    position: absolute;
+    top: 10rem;
+    left: 0;
+}
+#promo{
+    width: 7.4rem;
+    padding: 5px 6px;
+    margin: 8px;
+
+}
+#apply-promo, #checkout,.keep-shopping {
+    width: 6em;
+    padding: 3px 3px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin: 1rem;
+}
+#iphone-x td{
+    font-size: 11px;
+}
+}
